@@ -1,7 +1,7 @@
 +++
 title = 'Hello World'
 date = 2024-10-10T14:09:43+02:00
-draft = true
+draft = false
 +++
 
 # Hello world
