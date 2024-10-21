@@ -1,38 +1,207 @@
-.path {
-    fill: #fff;
-    stroke-width: 2;
-    stroke-miterlimit: 0;
-    stroke: #1c1c1c;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1000;
-    animation: dash 30s linear alternate infinite;
+/* 
+######################################################################
+#                                                                    #
+#                       Personal customization                       #
+#                                                                    #
+######################################################################
+*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('/fonts/Poppins-Regular.ttf');
+}
+
+html {
+    font-family: Poppins-Regular;
+}
+
+body {
+    background-image: url("/img/louigi_grid.jpg");
+    background-position: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: bottom left;
+    background-size: 1200px 1200px;
+    animation: moving-bg 600s infinite;
+}
+
+@keyframes moving-bg {
+  50% {
+    background-size: 1300px 1300px;
+    background-position: top right;
+  }
+}
+
+/* 
+######################################################################
+#                                                                    #
+#                  Modifications of Blowfish style                   #
+#                                                                    #
+######################################################################
+*/
+
+.active {
+  background: linear-gradient(45deg, #A645FF 0%, #53118F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px -10px 40px #A645FF;
+}
+
+.article {
+  opacity: 1;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  --tw-backdrop-blur: blur(15px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
+
+}
+
+.border-2 {
+  border-width: 0px;
+  border-color: #A645FF;
+  background-color: rgba(60, 60, 60, 0.5);
+  --tw-backdrop-blur: blur(5px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
+  transition: transform .5s; /* Animation */
+}
+
+.border-2:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+ 
+.h-\[800px\] {
+  height: 100%;
+}
+
+.h-\[1000px\] {
+  height: 100%;
+}
+
+.top-0 {
+  top: 0;
+  height: 100%;
+}
+
+#menu-blur {
+  opacity: 1;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  --tw-backdrop-blur: blur(15px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
+}
+
+[type=text]:focus, input:where(:not([type])):focus, [type=email]:focus, [type=url]:focus, [type=password]:focus, [type=number]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=week]:focus, [multiple]:focus, textarea:focus, select:focus {
+  --tw-ring-color: #A645FF;
+  border-color: #A645FF;
 }
   
-@-moz-keyframes dash {
-from {
-    stroke-dashoffset: 1000;
-    } to {
-      stroke-dashoffset: 0;
-    }
+
+
+body > div.fixed.inset-x-0.pl-\[24px\].pr-\[24px\].bg-neutral.dark\:bg-neutral-800 {
+  background-color: transparent;
+  opacity: 1;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  --tw-backdrop-blur: blur(15px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
 }
-@-webkit-keyframes dash {
-    from {
-      stroke-dashoffset: 1000;
-    } to {
-      stroke-dashoffset: 0;
-    }
+
+body > div.fixed.inset-x-0.pl-\[24px\].pr-\[24px\].bg-neutral.dark\:bg-neutral-800 > div > div > div.flex.flex-1.items-center.justify-between > nav.flex.space-x-3 > a {
+  opacity: 0;
 }
-@-o-keyframes dash {
-    from {
-      stroke-dashoffset: 1000;
-    } to {
-      stroke-dashoffset: 0;
-    }
+
+#main-content > article > div > div.mx-auto.max-w-7xl.p-0 > div > div.relative.px-1.py-1.flex.flex-col.items-center.justify-center.text-center > img {
+  border-radius: 15px;
+  height: 40%;
+  margin-right: 325px;
+  border: 3px solid #A645FF;
+  padding: 3px;
+  z-index: 5;
 }
-@keyframes dash {
-    from {
-      stroke-dashoffset: 1000;
-    } to {
-      stroke-dashoffset: 0;
-    }
+
+#main-content > article > div > div.mx-auto.max-w-7xl.p-0 > div > div.relative.px-1.py-1.flex.flex-col.items-center.justify-center.text-center > h1 {
+  font-size: 2.5em;
+  position: relative;
+  margin-top: -40px;
+  margin-left: 65px;
+  padding: 5px;
+  border-radius: 7px;
+  background: linear-gradient(45deg, #A645FF 0%, #53118F 100%);
+  /*background: linear-gradient(transparent 60%, #A645FF 55%, #53118F 100%);*/
+  color: #fff;
+  &::before {
+    position: absolute;
+    left: 0;
+    margin-left: 5px;
+    content: 'Louis GATTABRUSI';
+    z-index: 5;
+    color: transparent;
+    -webkit-text-stroke:0.000001px white;
+    -webkit-text-fill-color:transparent;
+  }
+  &::after {
+    content: '>_';
+  }
+}
+
+#main-content > section > div > a > button {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  background-color: #A645FF;
+  position: relative;
+  cursor: pointer;
+  margin: 0 30px;
+  border: none;
+  color: #fff;
+  transition: all 0.2s ease-out;
+}
+
+#main-content > section > div > a > button:hover {
+  background-color:#53118F;
+}
+  
+#main-content > section > div > a > button::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  bottom: -12px;
+  right: -12px;
+  border-top: 3px solid #A645FF;
+  border-left: 3px solid #A645FF;
+  transition: all 0.2s;
+}
+  
+#main-content > section > div > a > button::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transition: all 0.2s; 
+}
+
+#main-content > section > div > a > button:hover::before{
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+}
+#main-content > section > div > a > button:hover::after {
+    height: 30px;
+    width: 30px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
 }
