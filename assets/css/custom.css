@@ -205,3 +205,14 @@ body > div.fixed.inset-x-0.pl-\[24px\].pr-\[24px\].bg-neutral.dark\:bg-neutral-8
     border-bottom: 3px solid #fff;
     border-right: 3px solid #fff;
 }
+
+.text-xl {
+  background: linear-gradient(45deg, #A645FF 0%, #832fcf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+#main-content > .text-sm {
+  color: red !important;
+}

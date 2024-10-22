@@ -2,14 +2,14 @@
 :root {
   --color-neutral: 251, 250, 238;
   /* Gray */
-  --color-neutral-50: 0, 0, 0; /* h2, h3, ... titles text color */
-  --color-neutral-100: 0, 0, 0; /* Table of Contents text color */
+  --color-neutral-50: 166, 69, 255; /* h2, h3, ... titles text color */
+  --color-neutral-100: 255, 255, 255; /* Table of Contents text color */
   --color-neutral-200: 166, 69, 255; /* Home page Author title text color */
   --color-neutral-300: 255, 255, 255; /* Home page Author description text color */
   --color-neutral-400: 255, 255, 255; /* Articles date, words, minutes text color */
-  --color-neutral-500: 0, 0, 0; /* Search results icons color */
-  --color-neutral-600: 0, 0, 0; /* Scrollcar color */
-  --color-neutral-700: 0, 0, 0; /* Background color of table of content */
+  --color-neutral-500: 166, 69, 255;; /* Search results icons color */
+  --color-neutral-600: 45, 48, 50; /* Scrollcar color */
+  --color-neutral-700: 45, 48, 50; /* Background color of table of content */
   --color-neutral-800: 45, 48, 50; /* General background color */
   --color-neutral-900: 45, 48, 50; /* Background color of the searchbar */
   /* Blue */
@@ -17,8 +17,8 @@
   --color-primary-100: 255, 0, 0; /* ??? */
   --color-primary-200: 255, 255, 255; /* Home icons color */
   --color-primary-300: 255, 0, 0; /* ??? */
-  --color-primary-400: 0, 0, 0; /* Articles icons color and color of headertext menu on hover*/
-  --color-primary-500: 0, 0, 0; /* Dots, articles underlines and button border color */
+  --color-primary-400: 166, 69, 255; /* Articles icons color and color of headertext menu on hover*/
+  --color-primary-500: 166, 69, 255; /* Dots, articles underlines and button border color */
   --color-primary-600: 255, 0, 0; /* ??? */
   --color-primary-700: 255, 0, 0; /* ??? */
   --color-primary-800: 255, 0, 0; /* ??? */
