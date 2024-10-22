@@ -8,7 +8,7 @@
   --color-neutral-300: 255, 255, 255; /* Home page Author description text color */
   --color-neutral-400: 255, 255, 255; /* Articles date, words, minutes text color */
   --color-neutral-500: 166, 69, 255;; /* Search results icons color */
-  --color-neutral-600: 45, 48, 50; /* Scrollcar color */
+  --color-neutral-600: 166, 69, 255; /* Scrollcar color */
   --color-neutral-700: 45, 48, 50; /* Background color of table of content */
   --color-neutral-800: 45, 48, 50; /* General background color */
   --color-neutral-900: 45, 48, 50; /* Background color of the searchbar */

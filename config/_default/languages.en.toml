@@ -12,7 +12,7 @@ title = "Welcome"
   logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
   # description = "My awesome website"
-  copyright = "&copy; Copyright<br> Modified with 🖤 by Louis GATTABRUSI"
+  copyright = "&copy; Copyright - Louis GATTABRUSI"
 
 [params.author]
   name = "Louis GATTABRUSI"

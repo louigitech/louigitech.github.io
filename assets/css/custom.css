@@ -206,13 +206,21 @@ body > div.fixed.inset-x-0.pl-\[24px\].pr-\[24px\].bg-neutral.dark\:bg-neutral-8
     border-right: 3px solid #fff;
 }
 
-.text-xl {
-  background: linear-gradient(45deg, #A645FF 0%, #832fcf 100%);
+#main-content > section > section > a > div > div.px-6.py-4 > div.font-bold.text-xl.text-neutral-800.decoration-primary-500.hover\:underline.hover\:underline-offset-2.dark\:text-neutral,
+#main-content > section.w-full.grid.gap-4.sm\:grid-cols-2.md\:grid-cols-3 > a > div > div.px-6.py-4 > div.font-bold.text-xl.text-neutral-800.decoration-primary-500.hover\:underline.hover\:underline-offset-2.dark\:text-neutral {
+  background: linear-gradient(45deg, #A645FF 0%, #53118F 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
+  text-decoration: none;
 }
 
-#main-content > .text-sm {
-  color: red !important;
+#main-content > section > section > a > div > div.px-6.py-4 > div.text-sm.text-neutral-500.dark\:text-neutral-400,
+#main-content > section.w-full.grid.gap-4.sm\:grid-cols-2.md\:grid-cols-3 > a > div > div.px-6.py-4 > div.text-sm.text-neutral-500.dark\:text-neutral-400 {
+  color: #c4c4c4 !important;
+}
+
+#site-footer > div > p.text-xs.text-neutral-500.dark\:text-neutral-400::before {
+  content: 'Modified with 🖤 by Louis GATTABRUSI\A';
+  white-space: pre-wrap;
 }
