@@ -1,11 +1,12 @@
 disabled = false
 languageCode = "en"
 languageName = "English"
-weight = 1
-title = "Welcome"
+weight = 2
+title = "louigi.tech"
+contentDir = 'content/en/'
 
 [params]
-  displayName = "EN"
+  displayName = "English"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
@@ -16,11 +17,11 @@ title = "Welcome"
 
 [params.author]
   name = "Louis GATTABRUSI"
-  email = "youremail@example.com"
+  email = ""
   image = "img/avatar.jpg"
-#   imageQuality = 96
+  imageQuality = 96
   headline = "🛰️ Just a blog of a systems & networks administrator."
-  bio = "A little bit about you"
+  bio = "TBD"
   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },

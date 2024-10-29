@@ -1,73 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome</title>
+    <title>louigi.tech</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Welcome</description>
+    <description>Recent content on louigi.tech</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>youremail@example.com (Louis GATTABRUSI)</managingEditor>
-    <webMaster>youremail@example.com (Louis GATTABRUSI)</webMaster>
+    <language>fr</language>
     <copyright>&amp;copy; Copyright - Louis GATTABRUSI</copyright>
-    <lastBuildDate>Thu, 10 Oct 2024 14:09:43 +0200</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Oct 2024 14:09:43 +0200</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world2/</link>
-      <pubDate>Thu, 10 Oct 2024 14:09:43 +0200</pubDate>
-      <author>youremail@example.com (Louis GATTABRUSI)</author>
-      <guid>http://localhost:1313/posts/hello-world2/</guid>
-      <description>Hello world #This is bold test.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/hello-world2/featured.png" />
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world3/</link>
-      <pubDate>Thu, 10 Oct 2024 14:09:43 +0200</pubDate>
-      <author>youremail@example.com (Louis GATTABRUSI)</author>
-      <guid>http://localhost:1313/posts/hello-world3/</guid>
-      <description>Hello world #This is bold test.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/hello-world3/featured.png" />
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world4/</link>
-      <pubDate>Thu, 10 Oct 2024 14:09:43 +0200</pubDate>
-      <author>youremail@example.com (Louis GATTABRUSI)</author>
-      <guid>http://localhost:1313/posts/hello-world4/</guid>
-      <description>Hello world #This is bold test.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/hello-world4/featured.png" />
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world5/</link>
-      <pubDate>Thu, 10 Oct 2024 14:09:43 +0200</pubDate>
-      <author>youremail@example.com (Louis GATTABRUSI)</author>
-      <guid>http://localhost:1313/posts/hello-world5/</guid>
-      <description>Hello world #This is bold test.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/hello-world5/featured.png" />
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world6/</link>
-      <pubDate>Thu, 10 Oct 2024 14:09:43 +0200</pubDate>
-      <author>youremail@example.com (Louis GATTABRUSI)</author>
-      <guid>http://localhost:1313/posts/hello-world6/</guid>
-      <description>Hello world #This is bold test.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/hello-world6/featured.png" />
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Thu, 10 Oct 2024 14:09:43 +0200</pubDate>
-      <author>youremail@example.com (Louis GATTABRUSI)</author>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description>Hello world #This is bold test.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/hello-world/featured.png" />
+      <title>Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS</title>
+      <link>http://localhost:1313/posts/proxmox-dns-challenge/</link>
+      <pubDate>Wed, 23 Oct 2024 14:09:43 +0200</pubDate>
+      
+      <guid>http://localhost:1313/posts/proxmox-dns-challenge/</guid>
+      <description>📢 Introduction #Que ce soit dans votre homelab ou dans un environnement de production, vous êtes forcément tomber sur ce message à la première connexion de votre hôte Proxmox :</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/proxmox-dns-challenge/featured.jpg" />
     </item>
     
   </channel>

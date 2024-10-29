@@ -4,7 +4,8 @@
 
 theme = "blowfish"
 baseURL = "https://louigi.tech/"
-defaultContentLanguage = "en"
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 

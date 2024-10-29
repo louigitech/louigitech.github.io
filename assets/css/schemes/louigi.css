@@ -9,7 +9,7 @@
   --color-neutral-400: 255, 255, 255; /* Articles date, words, minutes text color */
   --color-neutral-500: 166, 69, 255;; /* Search results icons color */
   --color-neutral-600: 166, 69, 255; /* Scrollcar color */
-  --color-neutral-700: 45, 48, 50; /* Background color of table of content */
+  --color-neutral-700: 166, 69, 255; /* Background color of table of content */
   --color-neutral-800: 45, 48, 50; /* General background color */
   --color-neutral-900: 45, 48, 50; /* Background color of the searchbar */
   /* Blue */
@@ -22,7 +22,7 @@
   --color-primary-600: 255, 0, 0; /* ??? */
   --color-primary-700: 255, 0, 0; /* ??? */
   --color-primary-800: 255, 0, 0; /* ??? */
-  --color-primary-900: 0, 0, 0; /* Background color of search results on hover */
+  --color-primary-900: 166, 69, 255; /* Background color of search results on hover */
   /* Cyan */
   --color-secondary-50: 0, 0, 0;
   --color-secondary-100: 0, 0, 0;

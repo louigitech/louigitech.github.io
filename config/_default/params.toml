@@ -5,7 +5,7 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/configuration/#theme-parameters
 
-colorScheme = "louigi"
+colorScheme = "congo"
 defaultAppearance = "dark"
 autoSwitchAppearance = "false"
 
@@ -17,16 +17,16 @@ replyByEmail = false
 # mainSections = ["section1", "section2"]
 # robots = ""
 
-disableImageOptimization = false
-disableTextInHeader = false
+disableImageOptimization = true
+disableTextInHeader = true
 # backgroundImageWidth = 1200
 
 defaultBackgroundImage = "img/louigi_topographic_bg.svg" # used as default for background images 
-# defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
+defaultFeaturedImage = "/img/louigi_grid.jpg" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = true
-# smartTOC = true
-# smartTOCHideUnfocusedChildren = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = true
 
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v8.next.forgejo.org"
@@ -63,8 +63,8 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
-  showBreadcrumbs = false
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
   # editURL = "https://github.com/username/repo/"
@@ -77,11 +77,11 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showTableOfContents = true
   # showRelatedContent = false
   # relatedContentLimit = 3
-  showTaxonomies = false
+  showTaxonomies = true
   showAuthorsBadges = false
-  showWordCount = true
+  showWordCount = false
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
-  showZenMode = false
+  showZenMode = true
 
 [list]
   showHero = true
@@ -89,7 +89,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
-  showSummary = true
+  showSummary = false
   showViews = true
   showLikes = false
   showTableOfContents = true
@@ -105,23 +105,23 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [taxonomy]
   showTermCount = true
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
+  showViews = true
   showLikes = false
   showTableOfContents = false
-  cardView = false
+  cardView = true
 
 [term]
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false
   showTableOfContents = true
   groupByYear = false
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
 
 [firebase]
