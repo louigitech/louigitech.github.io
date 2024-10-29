@@ -79,6 +79,12 @@ body > div.fixed.inset-x-0.pl-\[24px\].pr-\[24px\].bg-neutral.dark\:bg-neutral-8
   transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(0px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
+}
+
  
 .h-\[800px\] {
   height: 100%;
