@@ -3,51 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-23T14:09:43+02:00</lastmod>
+    <loc>http://localhost:1313/fr/</loc>
+    <lastmod>2024-10-30T15:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/en/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="fr"
       href="http://localhost:1313/"
     />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="http://localhost:1313/fr/"
+    />
   </url>
   <url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-10-23T14:09:43+02:00</lastmod>
+    <loc>http://localhost:1313/fr/posts/</loc>
+    <lastmod>2024-10-30T15:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/en/posts/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="fr"
       href="http://localhost:1313/posts/"
     />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="http://localhost:1313/fr/posts/"
+    />
   </url>
   <url>
-    <loc>http://localhost:1313/posts/proxmox-dns-challenge/</loc>
-    <lastmod>2024-10-23T14:09:43+02:00</lastmod>
+    <loc>http://localhost:1313/fr/posts/proxmox-dns-challenge/</loc>
+    <lastmod>2024-10-30T15:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/en/posts/proxmox-dns-challenge/"
+      href="http://localhost:1313/posts/proxmox-dns-challenge/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="fr"
-      href="http://localhost:1313/posts/proxmox-dns-challenge/"
+      href="http://localhost:1313/fr/posts/proxmox-dns-challenge/"
     />
   </url>
 </urlset>

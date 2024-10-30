@@ -1,8 +1,9 @@
 +++
 title = "Proxmox : Certificat Let's Encrypt avec challenge DNS"
-date = 2024-10-23T14:09:43+02:00
-description = "Oui"
-draft = true
+date = 2024-10-30T15:00:00+02:00
+description = "Proxmox certificat let's encrypt avec challenge DNS Infomaniak"
+tags = ['System']
+draft = false
 +++
 
 

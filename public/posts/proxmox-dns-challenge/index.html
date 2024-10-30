@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
   data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
-  <meta http-equiv="content-language" content="fr" />
+  <meta http-equiv="content-language" content="en" />
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS &middot; louigi.tech</title>
-  <meta name="title" content="Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS &middot; louigi.tech" />
+  <title>Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge &middot; louigi.tech</title>
+  <meta name="title" content="Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge &middot; louigi.tech" />
   
-  <meta name="description" content="Oui" />
-  
+  <meta name="description" content="Proxmox let&#39;s encrypt certificate with DNS challenge Infomaniak" />
+  <meta name="keywords" content="System, " />
   
   
   <link rel="canonical" href="http://localhost:1313/posts/proxmox-dns-challenge/" />
@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.7379e8d8f960b6c1e2b138f4546731f7dde5e2b96c172c2216a24689a80b07838ebe16ab820fd146a90c80eee5f2c4350faaff1575b18490364697f19b19b25c.css"
-    integrity="sha512-c3no2PlgtsHisTj0VGcx993l4rlsFywiFqJGiagLB4OOvhargg/RRqkMgO7l8sQ1D6r/FXWxhJA2RpfxmxmyXA==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.bccb25ff26ad234d4f0b3e43c55b41986a8b2aee5b073db2d72c22065add76f6bc74136d50247802927602b9030c19649056c313f54705c136a6c493b8cd4de4.css"
+    integrity="sha512-vMsl/yatI01PCz5DxVtBmGqLKu5bBz2y1ywiBlrddva8dBNtUCR4ApJ2ArkDDBlkkFbDE/VHBcE2psSTuM1N5A==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -68,16 +68,16 @@
   
   
   
-  <meta property="og:title" content="Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS" />
-<meta property="og:description" content="Oui" />
+  <meta property="og:title" content="Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge" />
+<meta property="og:description" content="Proxmox let&#39;s encrypt certificate with DNS challenge Infomaniak" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/proxmox-dns-challenge/" /><meta property="og:image" content="http://localhost:1313/posts/proxmox-dns-challenge/featured.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-10-23T14:09:43+02:00" />
-<meta property="article:modified_time" content="2024-10-23T14:09:43+02:00" />
+<meta property="og:url" content="http://localhost:1313/posts/proxmox-dns-challenge/" /><meta property="og:image" content="http://localhost:1313/fr/posts/proxmox-dns-challenge/featured.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-10-30T15:00:00+02:00" />
+<meta property="article:modified_time" content="2024-10-30T15:00:00+02:00" />
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://localhost:1313/posts/proxmox-dns-challenge/featured.jpg" /><meta name="twitter:title" content="Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS"/>
-<meta name="twitter:description" content="Oui"/>
+<meta name="twitter:image" content="http://localhost:1313/fr/posts/proxmox-dns-challenge/featured.jpg" /><meta name="twitter:title" content="Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge"/>
+<meta name="twitter:description" content="Proxmox let&#39;s encrypt certificate with DNS challenge Infomaniak"/>
 
   
   <script type="application/ld+json">
@@ -85,26 +85,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Proxmox : Certificat Let\u0027s Encrypt avec challenge DNS",
-    "headline": "Proxmox : Certificat Let\u0027s Encrypt avec challenge DNS",
-    "description": "Oui",
-    "abstract": "📢 Introduction #\rQue ce soit dans votre homelab ou dans un environnement de production, vous êtes forcément tomber sur ce message à la première connexion de votre hôte Proxmox :",
-    "inLanguage": "fr",
+    "name": "Proxmox: Let\u0027s Encrypt Certificate with DNS Challenge",
+    "headline": "Proxmox: Let\u0027s Encrypt Certificate with DNS Challenge",
+    "description": "Proxmox let\u0027s encrypt certificate with DNS challenge Infomaniak",
+    "abstract": "📢 Introduction #\rWhether in your homelab or in a production environment, you\u0026rsquo;ve likely encountered this message on your first connection to your Proxmox host:",
+    "inLanguage": "en",
     "url" : "http:\/\/localhost:1313\/posts\/proxmox-dns-challenge\/",
     "author" : {
       "@type": "Person",
       "name": "Louis GATTABRUSI"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-10-23T14:09:43\u002b02:00",
-    "datePublished": "2024-10-23T14:09:43\u002b02:00",
+    "dateCreated": "2024-10-30T15:00:00\u002b02:00",
+    "datePublished": "2024-10-30T15:00:00\u002b02:00",
     
-    "dateModified": "2024-10-23T14:09:43\u002b02:00",
+    "dateModified": "2024-10-30T15:00:00\u002b02:00",
     
-    
+    "keywords": ["System"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1813"
+    "wordCount": "1505"
   }]
   </script>
 
@@ -163,7 +163,7 @@
   <div id="the-top" class="absolute flex self-center">
     <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
       href="#main-content"><span
-        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Aller au contenu</a>
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
   </div>
   
   
@@ -201,7 +201,7 @@
   <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-base font-medium" title="">
-        Accueil
+        Home
     </p>
 </a>
 
@@ -212,7 +212,7 @@
   <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-base font-medium" title="">
-        Articles
+        Blog
     </p>
 </a>
 
@@ -234,21 +234,21 @@
 
 
     </span>
-    <div class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS">FR</div>
+    <div class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge">EN</div>
   </div>
   <div class="absolute menuhide">
     <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
       <div class="flex flex-col space-y-3">
         
         <a href="/posts/proxmox-dns-challenge/" class="flex items-center">
-          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS">
-            Français
+          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge">
+            English
           </p>
         </a>
         
-        <a href="/en/posts/proxmox-dns-challenge/" class="flex items-center">
-          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge">
-            English
+        <a href="/fr/posts/proxmox-dns-challenge/" class="flex items-center">
+          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS">
+            Français
           </p>
         </a>
         
@@ -295,21 +295,21 @@
 
 
     </span>
-    <div class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS">FR</div>
+    <div class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge">EN</div>
   </div>
   <div class="absolute menuhide">
     <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
       <div class="flex flex-col space-y-3">
         
         <a href="/posts/proxmox-dns-challenge/" class="flex items-center">
-          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS">
-            Français
+          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge">
+            English
           </p>
         </a>
         
-        <a href="/en/posts/proxmox-dns-challenge/" class="flex items-center">
-          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge">
-            English
+        <a href="/fr/posts/proxmox-dns-challenge/" class="flex items-center">
+          <p class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS">
+            Français
           </p>
         </a>
         
@@ -377,7 +377,7 @@
     <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-bg font-bg" title="">
-            Accueil
+            Home
         </p>
     </a>
 </li>
@@ -392,7 +392,7 @@
     <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-bg font-bg" title="">
-            Articles
+            Blog
         </p>
     </a>
 </li>
@@ -443,20 +443,16 @@
   
 
 
-<div id="hero" class="h-[150px] md:h-[200px]"></div>
+<div class="w-full rounded-md h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/fr/posts/proxmox-dns-challenge/featured.jpg);"></div>
 
 
 
-    
-    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/proxmox-dns-challenge/featured.jpg);">
-    
-
-
+<div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/img/louigi_topographic_bg.svg);">
     <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
     </div>
     <div
-        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+        class="absolute inset-0 opacity-30 dark:opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral dark:to-neutral-800 mix-blend-normal">
     </div>
 </div>
 
@@ -468,6 +464,8 @@
         background_blur.style.opacity = (scroll / 300)
     });
 </script>
+
+
 
   
   
@@ -503,7 +501,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/posts/proxmox-dns-challenge/"
-      >Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS</a
+      >Proxmox: Let&#39;s Encrypt Certificate with DNS Challenge</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -512,7 +510,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Proxmox : Certificat Let's Encrypt avec challenge DNS
+      Proxmox: Let's Encrypt Certificate with DNS Challenge
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -542,8 +540,6 @@
 
 
 
-  
-
 
 
 
@@ -559,32 +555,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-23T14:09:43&#43;02:00">23 octobre 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Temps de lecture">9 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
-  
-  
-    
-    
-      
-      
-        
-        
-      
-        
-        
-      
-      
-    
-  
-  <span id="views_posts\proxmox-dns-challenge\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
-  <span class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
-  </span>
-
-</span>
-</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-10-30T15:00:00&#43;02:00">30 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -592,9 +563,9 @@
 <span class="mb-[2px]">
     <span id="zen-mode-button"
           class="text-lg hover:text-primary-500"
-          title="Activer le mode zen"
-          data-title-i18n-disable="Activer le mode zen"
-          data-title-i18n-enable="Désactiver le mode zen">
+          title="Enable zen mode"
+          data-title-i18n-disable="Enable zen mode"
+          data-title-i18n-enable="Disable zen mode">
         <span class="inline-block align-text-bottom">
 
   <span class="relative block icon">
@@ -609,12 +580,6 @@
   
 
   
-  
-  <span class="pl-2"><span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Brouillon
-  </span>
-</span></span>
   
 </div>
 
@@ -632,6 +597,16 @@
   
   
   
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/system/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    System
+  </span>
+</span>
+  </span>
   
   
   
@@ -665,7 +640,7 @@
   class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
   <summary
     class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    Sommaire
+    Table of Contents
   </summary>
   <div
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
@@ -673,30 +648,30 @@
   <ul>
     <li><a href="#-introduction">📢 Introduction</a>
       <ul>
-        <li><a href="#-prérequis">🔍 Prérequis</a></li>
-        <li><a href="#-avantages">➕ Avantages</a></li>
-        <li><a href="#-incovénients">➖ Incovénients</a></li>
+        <li><a href="#-prerequisites">🔍 Prerequisites</a></li>
+        <li><a href="#-pros">➕ Pros</a></li>
+        <li><a href="#-cons">➖ Cons</a></li>
       </ul>
     </li>
-    <li><a href="#-mise-en-place">⚙️ Mise en place</a>
+    <li><a href="#-setup">⚙️ Setup</a>
       <ul>
-        <li><a href="#-comptes-acme">🛠️ Comptes ACME</a></li>
-        <li><a href="#-token-api-infomaniak">🪙 Token API (Infomaniak)</a></li>
+        <li><a href="#-acme-accounts">🛠️ ACME Accounts</a></li>
+        <li><a href="#-api-token-infomaniak">🪙 API Token (Infomaniak)</a></li>
         <li><a href="#-challenge-plugin">🔧 Challenge plugin</a></li>
-        <li><a href="#-génération-des-certificats">📜 Génération des certificats</a>
+        <li><a href="#-certificates-creation">📜 Certificates creation</a>
           <ul>
-            <li><a href="#-certificat-de-staging">🧪 Certificat de staging</a></li>
-            <li><a href="#-certificat-de-production">🏭 Certificat de production</a></li>
+            <li><a href="#-staging-certificate">🧪 Staging certificate</a></li>
+            <li><a href="#-production-certificate">🏭 Production certificate</a></li>
           </ul>
         </li>
       </ul>
     </li>
     <li><a href="#-conclusion">🎬 Conclusion</a></li>
-    <li><a href="#-problèmes-et-résolutions">❌ Problèmes et résolutions</a>
+    <li><a href="#-troubleshooting">❌ Troubleshooting</a>
       <ul>
-        <li><a href="#-infomaniak-api-token">💡 Infomaniak API token</a></li>
-        <li><a href="#-mauvais-certificat">💡 Mauvais certificat</a></li>
-        <li><a href="#-validation-acme">💡 Validation ACME</a></li>
+        <li><a href="#-infomaniak-api-token">💡 Infomaniak API Token</a></li>
+        <li><a href="#-incorrect-certificate">💡 Incorrect Certificate</a></li>
+        <li><a href="#-acme-validation">💡 ACME Validation</a></li>
       </ul>
     </li>
   </ul>
@@ -706,7 +681,7 @@
 <details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
   <summary
     class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    Sommaire
+    Table of Contents
   </summary>
   <div
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
@@ -714,30 +689,30 @@
   <ul>
     <li><a href="#-introduction">📢 Introduction</a>
       <ul>
-        <li><a href="#-prérequis">🔍 Prérequis</a></li>
-        <li><a href="#-avantages">➕ Avantages</a></li>
-        <li><a href="#-incovénients">➖ Incovénients</a></li>
+        <li><a href="#-prerequisites">🔍 Prerequisites</a></li>
+        <li><a href="#-pros">➕ Pros</a></li>
+        <li><a href="#-cons">➖ Cons</a></li>
       </ul>
     </li>
-    <li><a href="#-mise-en-place">⚙️ Mise en place</a>
+    <li><a href="#-setup">⚙️ Setup</a>
       <ul>
-        <li><a href="#-comptes-acme">🛠️ Comptes ACME</a></li>
-        <li><a href="#-token-api-infomaniak">🪙 Token API (Infomaniak)</a></li>
+        <li><a href="#-acme-accounts">🛠️ ACME Accounts</a></li>
+        <li><a href="#-api-token-infomaniak">🪙 API Token (Infomaniak)</a></li>
         <li><a href="#-challenge-plugin">🔧 Challenge plugin</a></li>
-        <li><a href="#-génération-des-certificats">📜 Génération des certificats</a>
+        <li><a href="#-certificates-creation">📜 Certificates creation</a>
           <ul>
-            <li><a href="#-certificat-de-staging">🧪 Certificat de staging</a></li>
-            <li><a href="#-certificat-de-production">🏭 Certificat de production</a></li>
+            <li><a href="#-staging-certificate">🧪 Staging certificate</a></li>
+            <li><a href="#-production-certificate">🏭 Production certificate</a></li>
           </ul>
         </li>
       </ul>
     </li>
     <li><a href="#-conclusion">🎬 Conclusion</a></li>
-    <li><a href="#-problèmes-et-résolutions">❌ Problèmes et résolutions</a>
+    <li><a href="#-troubleshooting">❌ Troubleshooting</a>
       <ul>
-        <li><a href="#-infomaniak-api-token">💡 Infomaniak API token</a></li>
-        <li><a href="#-mauvais-certificat">💡 Mauvais certificat</a></li>
-        <li><a href="#-validation-acme">💡 Validation ACME</a></li>
+        <li><a href="#-infomaniak-api-token">💡 Infomaniak API Token</a></li>
+        <li><a href="#-incorrect-certificate">💡 Incorrect Certificate</a></li>
+        <li><a href="#-acme-validation">💡 ACME Validation</a></li>
       </ul>
     </li>
   </ul>
@@ -831,103 +806,99 @@
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-introduction" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-introduction" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Que ce soit dans votre homelab ou dans un environnement de production, vous êtes forcément tomber sur ce message à la première connexion de votre hôte Proxmox :</p>
+<p>Whether in your homelab or in a production environment, you&rsquo;ve likely encountered this message on your first connection to your Proxmox host:</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/self_signed_alert.jpg" alt="Self signed alert" />
       
     </figure>
 </p>
-<p>Par défaut, l&rsquo;interface web de Proxmox est livrée avec un certificat auto-signé. Heureusement pour nous, les dernières versions de Proxmox supportent nativement les challenges ACME DNS !</p>
-<p>Dans cet article, je vais vous expliquer de manière détaillée, toutes les étapes nécessaires à la mise en place d&rsquo;un certificat Let&rsquo;s Encrypt avec un challenge DNS.</p>
-<p>Il faut savoir que la procédure a été réalisation avec un token d&rsquo;API Infomaniak puisque mon domaine est chez eux. Toutefois, la procédure devrait fonctionner pour les autres fournisseurs, il vous suffira d&rsquo;adapter les paramètres en fonction.</p>
+<p>By default, the Proxmox web interface comes with a self-signed certificate. Fortunately for us, the latest versions of Proxmox natively support ACME DNS challenges!</p>
+<p>In this article, I will explain in detail all the steps necessary to set up a Let&rsquo;s Encrypt certificate using a DNS challenge.</p>
+<p>Note that this procedure was carried out using an Infomaniak API token, as my domain is hosted with them. However, the procedure should work for other providers as well; you’ll just need to adapt the settings accordingly.</p>
 
 
-<h3 class="relative group">🔍 Prérequis 
-    <div id="-pr%C3%A9requis" class="anchor"></div>
+<h3 class="relative group">🔍 Prerequisites 
+    <div id="-prerequisites" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-pr%C3%A9requis" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-prerequisites" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>3 choses :</p>
-<p>✅ Un enregistrement de type A sur votre / vos DNS locaux → Le mien pointe vers minastirith.gattabru.si <br>
-✅ Nom de domaine public → Dans mon cas <code>gattabru.si</code><br>
-✅ Registrar compatible → Domaine chez Infomaniak</p>
+<p>3 things to check:</p>
+<p>✅ An A record on your local DNS server(s) → Mine points to minastirith.gattabru.si<br>
+✅ Public domain name → In my case, <code>gattabru.si</code><br>
+✅ Compatible registrar → Domain hosted with Infomaniak</p>
 
 
-<h3 class="relative group">➕ Avantages 
-    <div id="-avantages" class="anchor"></div>
+<h3 class="relative group">➕ Pros 
+    <div id="-pros" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-avantages" aria-label="Ancre">#</a>
-    </span>        
-    
-</h3>
-<ul>
-<li>Pas besoin d&rsquo;exposer les ports 80 et 443 sur Internet</li>
-<li>Pas besoin d&rsquo;enregistrement A ou CNAME qui pointe vers votre adresse IP publique</li>
-<li>Par conséquent, renforcement de la sécurité</li>
-</ul>
-
-
-<h3 class="relative group">➖ Incovénients 
-    <div id="-incov%C3%A9nients" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-incov%C3%A9nients" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-pros" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <ul>
-<li>Nom de domaine public <strong>obligatoire</strong></li>
-<li>Votre registrar doit être compatible avec le challenge DNS (<a href="https://go-acme.github.io/lego/dns/" target="_blank">la liste ici</a>)</li>
-<li>Complexité de mise en place (et encore, une fois que vous avez compris c&rsquo;est assez simple)</li>
+<li>No need to expose ports 80 and 443 to the Internet</li>
+<li>No need for A or CNAME records pointing to your public IP address</li>
+<li>Therefore, enhanced security</li>
 </ul>
 
 
-<h2 class="relative group">⚙️ Mise en place 
-    <div id="-mise-en-place" class="anchor"></div>
+<h3 class="relative group">➖ Cons 
+    <div id="-cons" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-mise-en-place" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-cons" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>A public domain name is <strong>required</strong></li>
+<li>Your registrar must support the DNS challenge (<a href="https://go-acme.github.io/lego/dns/" target="_blank">list here</a>)</li>
+<li>Complexity of setup (although, once you understand it, it&rsquo;s fairly straightforward)</li>
+</ul>
+
+
+<h2 class="relative group">⚙️ Setup 
+    <div id="-setup" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-setup" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
 
 
-<h3 class="relative group">🛠️ Comptes ACME 
-    <div id="-comptes-acme" class="anchor"></div>
+<h3 class="relative group">🛠️ ACME Accounts 
+    <div id="-acme-accounts" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-comptes-acme" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-acme-accounts" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>On va commencer par déclarer non pas un mais deux comptes ACME sur notre hôte, voici pourquoi :</p>
+<p>We&rsquo;ll start by setting up not one but two ACME accounts on our host, here’s why:</p>
 <ul>
-<li>
-<p>Un compte de <code>staging</code> sur le directory <code>Let's Encrypt V2 Staging</code> qui nous servira à valider que notre configuration ACME est correcte. En cas de problème on pourra débugger et corriger nos erreurs, sans atteindre la limite décrite plus bas et donc, de se retrouver bloqué.</p>
-</li>
-<li>
-<p>L&rsquo;autre compte de <code>produduction</code> sur le directory <code>Let's Encrypt V2</code>. Une fois la configuration validée, on baculera sur ce compte pour obtenir notre certificat final.</p>
-</li>
+<li>A <code>staging</code> account in the <code>Let's Encrypt V2 Staging</code> directory, which will be used to validate that our ACME configuration is correct. This allows for debugging and error correction without hitting the rate limit described below, which could otherwise result in account blocking.</li>
 </ul>
+<p>-The other is a <code>produduction</code> account in the <code>Let's Encrypt V2</code> directory. Once configuration is validated, we’ll switch to this account to obtain our final certificate.</p>
 
   
 
@@ -956,15 +927,15 @@
   <span
     
       class="dark:text-neutral-300"
-    >La limite est de 5 échecs par compte, par nom d&rsquo;hôte, par heure sur le directory <code>Let's Encrypt V2</code>.</span>
+    >The limit is 5 failures per account, per hostname, per hour in the <code>Let's Encrypt V2</code> directory.</span>
 </div>
 
-<p>Pour créer les premier compte sur le directory <code>Let's Encrypt V2 Staging</code>, rendez-vous dans les menus suivants :</p>
+<p>To create the first account in the <code>Let's Encrypt V2 Staging</code> directory, go through the following menus:</p>
 <ol>
 <li>Datacenter</li>
 <li>ACME</li>
-<li>Appuyez sur le bouton <code>Add</code>, afin d&rsquo;ajouter un nouveau compte</li>
-<li>Renseignez les infos et choisissez bien le directory <code>Let's Encrypt V2 Staging</code>. N&rsquo;oubliez pas également d&rsquo;accepter les conditions de service (TOS).</li>
+<li>Click <code>Add</code> to add a new account</li>
+<li>Fill in the information and be sure to choose the <code>Let's Encrypt V2 Staging</code> directory. Don’t forget to accept the Terms of Service (TOS).</li>
 </ol>
 <p>
     <figure>
@@ -972,55 +943,53 @@
       
     </figure>
 </p>
-<p>Vous pouvez répéter les étapes 3 et 4 pour le directory <code>Let's Encrypt V2</code> :
+<p>Repeat steps 3 and 4 for the <code>Let's Encrypt V2</code> directory:
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/add_acme_account_prod.jpg" alt="Adding ACME prod. account" />
       
     </figure>
 </p>
-<p>Nos deux comptes sont créés, nous allons désormais créer un token sur l&rsquo;API de notre registrar pour le fonctionnement de notre challenge DNS.</p>
+<p>With both accounts created, we’ll now create an API token from our registrar to enable the DNS challenge.</p>
 
 
-<h3 class="relative group">🪙 Token API (Infomaniak) 
-    <div id="-token-api-infomaniak" class="anchor"></div>
+<h3 class="relative group">🪙 API Token (Infomaniak) 
+    <div id="-api-token-infomaniak" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-token-api-infomaniak" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-api-token-infomaniak" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>Cette action va vraiment dépendre du fournisseur de votre nom de domaine. Le mien étant chez Infomaniak, je vais vous montrer comment faire sur leur plateforme. En général, quelques recherches Google et vous avez votre réponse :</p>
+<p>This step will vary depending on your domain provider. Since my domain is with Infomaniak, I’ll show you how it’s done on their platform. Generally, a quick Google search will provide guidance:</p>
 <ul>
 <li><a href="https://api.gandi.net/docs/authentication/" target="_blank">Gandi</a></li>
 <li><a href="https://help.ovhcloud.com/csm/en-api-getting-started-ovhcloud-api?id=kb_article_view&amp;sysparm_article=KB0042777" target="_blank">OVH</a></li>
 </ul>
-<p>Si comme moi, votre domaine est chez Infomaniak, connectez-vous sur votre manager et créez un nouveau token. Rendez-vous en haut à gauche dans la section <code>Utilisateurs et profil</code> :
+<p>If your domain is with Infomaniak like mine, log into your manager and create a new token. Go to the top left in the <code>Users and Profile</code> section:
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/infomaniak_api_token1.jpg" alt="Infomaniak API token" />
       
     </figure>
 </p>
-<p>Choisissez ensuite <code>Mon profil</code> &gt; <code>Développeur</code> &gt; puis finalement <code>Tokens API</code> pour arriver sur la console de gestion de vos tokens.
-Sur cette console, on va créer un nouveau token :</p>
+<p>Next, select <code>My profile</code> &gt; <code>Developer</code> &gt; puis finalement <code>API Tokens</code> to access your token management console. In this console, we’ll create a new token:</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/infomaniak_api_token2.jpg" alt="Infomaniak API token" />
       
     </figure>
 </p>
-<p>Renseignez les diverses informations puis créez votre token.
-Limitez bien le scope de votre token uniquement aux <code>domain - Produits Noms de domaine</code>. Je vous déconseille vivement de mettre le scope sur &ldquo;Tous&rdquo;, pour des questions évidentes de sécurité. Pensez aux conséquences si votre token viendrait à être compromis.</p>
+<p>Fill in the required information, then create your token. Be sure to limit the token scope to <code>domain - Produits Noms de domaine</code>. It’s strongly recommended not to set the scope to &ldquo;All&rdquo; for obvious security reasons. Think of the consequences if your token were to be compromised.</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/infomaniak_api_token3.jpg" alt="Infomaniak API token" />
       
     </figure>
 </p>
-<p>Votre token est désormais créé :</p>
+<p>Your token is now created:</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/infomaniak_api_token4.jpg" alt="Infomaniak API token" />
@@ -1055,11 +1024,11 @@ Limitez bien le scope de votre token uniquement aux <code>domain - Produits Noms
   <span
     
       class="dark:text-neutral-300"
-    >Une fois votre token créé, copiez-le et stockez le dans un endroit sûr tel qu&rsquo;un gestionnaire de mot de passe.</span>
+    >Once created, copy your token and store it securely, such as in a password manager.</span>
 </div>
 
-<p>Comme indiqué, une fois cette page fermée, il ne sera plus possible de voir le token. Dans le cas ou vous auriez oublié de le copier, vous pouvez toujours supprimer celui-ci et en générer un nouveau.</p>
-<p>Voila, notre token est créé et il est limité uniquement au scope dont nous avons besoin, on peut retouner sur notre hôte Proxmox pour la suite de la configuration.</p>
+<p>As noted, you won’t be able to view the token again once you close this page. If you forget to copy it, you can always delete it and generate a new one.</p>
+<p>Now that we have our token, limited to the required scope, we can return to our Proxmox host to continue configuration.</p>
 
 
 <h3 class="relative group">🔧 Challenge plugin 
@@ -1068,36 +1037,36 @@ Limitez bien le scope de votre token uniquement aux <code>domain - Produits Noms
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-challenge-plugin" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-challenge-plugin" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>Toujours dans le même menu <code>ACME</code>, dans la section <code>Challenge Plugin</code>, appuyez sur <code>Add</code> pour ajouter un plugin :
+<p>In the same <code>ACME</code> menu, go to the <code>Challenge Plugin</code> section and click <code>Add</code> to add a new plugin:
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/add_acme_dns_plugin.jpg" alt="Adding ACME dns plugin" />
       
     </figure>
 </p>
-<p>Quelques explications :</p>
+<p>Some explanations:</p>
 <ul>
 <li>
-<p><code>Plugin ID</code> est le nom que vous souhaitez donner à votre plugin. Je vous conseil de garder un nom cohérent, sans espaces.</p>
+<p><code>Plugin ID</code> is the name you’d like to give to your plugin. I recommend keeping it consistent, without spaces.</p>
 </li>
 <li>
-<p><code>Validation Delay</code> est le temps en secondes entre la création de votre enregistrement DNS via l&rsquo;API et le moment où le fournisseur d&rsquo;ACME est invité à le valider. Je vous conseil de laisser ce paramètre par défaut et jouer avec plus tard, dans le cas ou ce délais serait trop court pour la validation de votre enregistrement.</p>
+<p><code>Validation Delay</code> is the time in seconds between creating your DNS record via the API and when the ACME provider is asked to validate it. I recommend keeping this parameter default, adjusting it later if the validation period is too short.</p>
 </li>
 <li>
-<p><code>DNS API</code> : Qui est votre registrar. Selon votre choix, la section du dessous ne vous demandera pas les mêmes infos. <em>Exemple avec Cloudflare :</em>
+<p><code>DNS API</code> : Who your registrar is. Depending on your selection, the section below will request different information. <em>Example with Cloudflare:</em>
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/acme_dns_cloudflare.jpg" alt="ACME dns Cloudflare" />
-      <figcaption>On peut clairement voir que nous n&rsquo;avons pas les mêmes paramètres qu&rsquo;Infomaniak</figcaption>
+      <figcaption>We can clearly see that we don&rsquo;t have the same parameters as Infomaniak</figcaption>
     </figure>
 </p>
 </li>
 <li>
-<p><code>API DATA</code> : Vos paramètres API tels que votre token, le TTL de votre enregistrement &hellip;</p>
+<p><code>API DATA</code> : Your API parameters, such as your token, TTL, etc.</p>
 </li>
 </ul>
 
@@ -1128,17 +1097,17 @@ Limitez bien le scope de votre token uniquement aux <code>domain - Produits Noms
   <span
     
       class="dark:text-neutral-300"
-    >Les paramètres <code>API DATA</code> dépendent de votre registrar et ne sont pas les mêmes d&rsquo;un registrar à un autre.</span>
+    >The <code>API DATA</code> parameters depend on your registrar and vary between providers.</span>
 </div>
 
-<p>Mon registrar est Infomaniak, je vais donc consulter la documentation directement sur le <a href="https://go-acme.github.io/lego/dns/infomaniak/index.html" target="_blank">site de go-acme.github.io</a> :
+<p>Since my registrar is Infomaniak, I’ll consult the documentation directly on the <a href="https://go-acme.github.io/lego/dns/infomaniak/index.html" target="_blank">go-acme.github.io website</a>:
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/acme_infomaniak_config.jpg" alt="ACME Infomaniak config" />
       
     </figure>
 </p>
-<p>Les paramètres renseignés sous <code>Credentials</code> sont obligatoires. Les autres sous <code>Additional Configuration</code>, ne le sont pas mais sont très pratiques afin d&rsquo;obtenir la validation (on verra ça un peu plus bas).</p>
+<p>The parameters listed under <code>Credentials</code> are mandatory. The others under <code>Additional Configuration</code> are optional but very helpful for validation (we’ll cover this below).</p>
 
   
 
@@ -1167,57 +1136,57 @@ Limitez bien le scope de votre token uniquement aux <code>domain - Produits Noms
   <span
     
       class="dark:text-neutral-300"
-    ><p><strong>ATTENTION :</strong> Si votre domaine est chez Infomaniak, le paramètre <code>INFOMANIAK_ACCESS_TOKEN</code> n&rsquo;est pas bon sous Proxmox&hellip;</p>
-<p>Il faut le remplacer par le paramètre nommé <code>INFOMANIAK_API_TOKEN</code> (comme la photo ci-dessous) sinon, vous allez finir avec <a href="#-infomaniak-api-token">l&rsquo;erreur décrite en bas d&rsquo;article</a>.</p>
+    ><p><strong>CAUTION:</strong> If your domain is with Infomaniak, the <code>INFOMANIAK_ACCESS_TOKEN</code> parameter won’t work with Proxmox.</p>
+<p>Replace it with <code>INFOMANIAK_API_TOKEN</code> (as shown below); otherwise, you’ll encounter <a href="#-infomaniak-api-token">the error described later in this article</a>.</p>
 </span>
 </div>
 
-<p>On connait donc l&rsquo;ensemble de nos paramètres, on peut donc les renseigner dans le champ <code>API DATA</code> sur notre hôte Proxmox :</p>
+<p>Now that we know all our parameters, we can enter them in the <code>API DATA</code> field on our Proxmox host:</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/acme_dns_plugin_good_config.jpg" alt="ACME Infomaniak good config" />
       
     </figure>
 </p>
-<p>Comme vous pouvez le constater, j&rsquo;ai bien remplacé le paramètre <code>INFOMANIAK_ACCESS_TOKEN</code> par <code>INFOMANIAK_API_TOKEN</code>. Nul besoin de mettre votre token entre guillemets ou apostrophes.</p>
-<p>Je rajoute également les paramètres <code>INFOMANIAK_PROPAGATION_TIMEOUT</code> et <code>INFOMANIAK_TTL</code>. Ces deux valeurs sont à 300 (secondes) afin d&rsquo;indiquer que la validation s&rsquo;arrêtera au bout de 5 minutes si elle échoue, et le Time To Live (TTL) de notre enregistrement sera également de 5 minutes.</p>
-<p>La configuration de notre challenge DNS est terminée, on peut désormais générer nos certificats !</p>
+<p>As shown, I’ve replaced <code>INFOMANIAK_ACCESS_TOKEN</code> with <code>INFOMANIAK_API_TOKEN</code>. There’s no need to enclose your token in quotes.</p>
+<p>I&rsquo;ve also added <code>INFOMANIAK_PROPAGATION_TIMEOUT</code> and <code>INFOMANIAK_TTL</code>. both set to 300 seconds. This means validation will timeout after 5 minutes if it fails, and the TTL for our record will also be 5 minutes.</p>
+<p>The DNS challenge configuration is complete, and we can now generate our certificates!</p>
 
 
-<h3 class="relative group">📜 Génération des certificats 
-    <div id="-g%C3%A9n%C3%A9ration-des-certificats" class="anchor"></div>
+<h3 class="relative group">📜 Certificates creation 
+    <div id="-certificates-creation" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-g%C3%A9n%C3%A9ration-des-certificats" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-certificates-creation" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>Si vous êtes à l&rsquo;aise avec le challenge DNS, vous pouvez directement passé à la <a href="#-certificat-de-production">génération du certificat de production</a>.</p>
-<p>Sinon, je vous propose de faire vos tests avec le compte de <strong>staging</strong>, afin de ne pas atteindre <a href="#-comptes-acme">les limitations citées plus haut</a>.<br>
-Une fois notre configuration de staging validée, on basculera sur le compte de <strong>production</strong>.</p>
+<p>If you’re familiar with the DNS challenge, you can skip to the <a href="#-production-certificate">production certificate generation</a>.</p>
+<p>Otherwise, I suggest testing with the <strong>staging</strong> account to avoid hitting the <a href="#-acme-accounts">the rate limits mentioned above</a>.<br>
+Once the staging configuration is validated, we’ll switch to the <strong>production</strong> account.</p>
 
 
-<h4 class="relative group">🧪 Certificat de staging 
-    <div id="-certificat-de-staging" class="anchor"></div>
+<h4 class="relative group">🧪 Staging certificate 
+    <div id="-staging-certificate" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-certificat-de-staging" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-staging-certificate" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p>Pour cela, rendez-vous dans l&rsquo;onglet <code>Certificates</code> de votre hôte (<code>Nom de votre hôte</code> &gt; <code>System</code> &gt; <code>Certificates</code>).<br>
-Puis basculez le compte ACME sur celui de Staging :</p>
+<p>For this, go to the <code>Certificates</code> tab of your host (<code>Hostname</code> &gt; <code>System</code> &gt; <code>Certificates</code>).<br>
+Then switch the ACME account to Staging:</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/proxmox_certificates_acme_account.jpg" alt="Proxmox Certificates ACME account" />
       
     </figure>
 </p>
-<p>On peut désormais créer un nouveau certificat via le bouton <code>Add</code> de cette même page :</p>
+<p>We can now create a new certificate via the <code>Add</code> button on this page:</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/proxmox_certificates_acme_staging.jpg" alt="Proxmox Certificates ACME Staging" />
@@ -1226,20 +1195,20 @@ Puis basculez le compte ACME sur celui de Staging :</p>
 </p>
 <ol>
 <li>
-<p>On vient bien lui spécifier un <code>Challenge Type</code> DNS, venir sélectionner notre plugin précédement créé puis on renseigne le nom de notre enregistrement DNS.</p>
+<p>Specify a <code>Challenge Type</code> of DNS, select our previously created plugin, and enter the name of our DNS record.</p>
 </li>
 <li>
-<p>Une fois les champs remplis, on vient finaliser la création de notre certificat avec le bouton <code>Create</code> puis on lance la commande de celui-ci avec le bouton <code>Order Certificates Now</code>.</p>
+<p>Once the fields are filled out, finalize the certificate creation with the <code>Create</code> button, then order it with <code>Order Certificates Now</code>.</p>
 </li>
 </ol>
-<p>Si tout se déroule bien, vous devriez avoir le résultat suivant :</p>
+<p>If everything goes well, you should see the following result:</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/proxmox_certificates_staging_success.jpg" alt="Proxmox ACME Staging Success" />
       
     </figure>
 </p>
-<p>L&rsquo;interface web Proxmox va alors se recharger avec le nouveau certificat que vous venez de générer :</p>
+<p>The Proxmox web interface will then reload with the new certificate you generated:</p>
 
   
 
@@ -1268,7 +1237,7 @@ Puis basculez le compte ACME sur celui de Staging :</p>
   <span
     
       class="dark:text-neutral-300"
-    >Pour le moment, il est encore normal d&rsquo;avoir un message d&rsquo;alerte. Le directory <code>Let's Encrypt V2 Staging</code> ne génère pas de certificats issus d&rsquo;une authorité de certification de confiance et connue par votre navigateur.</span>
+    >At this stage, it’s still normal to see a warning message. The <code>Let's Encrypt V2 Staging</code> directory does not issue certificates from a trusted authority recognized by your browser.</span>
 </div>
 
 <p>
@@ -1279,38 +1248,38 @@ Puis basculez le compte ACME sur celui de Staging :</p>
 </p>
 
 
-<h4 class="relative group">🏭 Certificat de production 
-    <div id="-certificat-de-production" class="anchor"></div>
+<h4 class="relative group">🏭 Production certificate 
+    <div id="-production-certificate" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-certificat-de-production" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-production-certificate" aria-label="Anchor">#</a>
     </span>        
     
 </h4>
-<p>Notre configuration est donc correcte, on peut générer notre certificat final. Pour cela, basculez sur votre compte ACME <code>ACME_PROD</code> afin d&rsquo;être sur le directory <code>Let's Encrypt V2</code>. Puis commandez votre certificat via le bouton <code>Order Certificates Now</code> :</p>
+<p>With our configuration validated, we can generate our final certificate. Switch to your <code>ACME_PROD</code>account to use the <code>Let's Encrypt V2</code> directory, then order your certificate via the <code>Order Certificates Now</code> button:</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/proxmox_certificates_acme_prod.jpg" alt="Proxmox ACME Prod" />
       
     </figure>
 </p>
-<p>Une nouvelle fois, si tout se passe bien, un enregistrement temporaire de type TXT qui commence par <code>_acme-challenge</code> devrait apparaitre dans votre zone DNS. Celui-ci a bien TTL de 5 minutes comme indiqué dans le paramètres <code>INFOMANIAK_TTL</code> de notre <code>ACME DNS Plugin</code> :</p>
+<p>Again, if everything proceeds smoothly, a temporary <code>_acme-challenge</code> TXT record should appear in your DNS zone, with a TTL of 5 minutes as specified in the <code>INFOMANIAK_TTL</code> parameter of our <code>ACME DNS Plugin</code> :</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/infomaniak_acme_dns_record.jpg" alt="Proxmox ACME Prod" />
       
     </figure>
 </p>
-<p>Le résultat de votre commande devrait être identique à celle sur le directory <code>Let's Encrypt V2 Staging</code> :</p>
+<p>The result of your request should be similar to that in the <code>Let's Encrypt V2 Staging</code> directory:</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/proxmox_certificates_prod_success.jpg" alt="Proxmox ACME Staging Success" />
       
     </figure>
 </p>
-<p>Et finalement, l&rsquo;interface web Proxmox devrait se recharger avec votre nouveau certificat Let&rsquo;s Encrypt en place :</p>
+<p>Finally, the Proxmox web interface should reload with your new Let&rsquo;s Encrypt certificate in place:</p>
 <p>
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/proxmox_r3_certificate.jpg" alt="Proxmox ACME Prod Certificate" />
@@ -1325,45 +1294,44 @@ Puis basculez le compte ACME sur celui de Staging :</p>
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-conclusion" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-conclusion" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Nous avons pu voir ensemble les diverses étapes afin de signé l&rsquo;interface graphique de notre hôte Proxmox.</p>
-<p>Le renouvellement de votre certificat s&rsquo;effectuera par défaut tout seul, 30 jours avant sa date d&rsquo;expiration.
-En cas de problème de renouvellement, vous revevrez un mail de Let&rsquo;s Encrypt sur le / les adresses mail que vous avez renseignées dans vos comptes ACME.</p>
-<p>En cas de problème n&rsquo;hésitez pas à jeter un coup d&rsquo;oeil à la section <a href="#-probl%c3%a8mes-et-r%c3%a9solutions">Problèmes et résolutions</a>. Sinon, il y a plus qu&rsquo;une chose à faire&hellip; <a href="https://estcequecestbientotlapero.fr/" target="_blank">Apéééééro</a> !</p>
+<p>We’ve covered the steps to secure the Proxmox web interface with a signed certificate.</p>
+<p>Certificate renewal will occur automatically by default, 30 days before expiration. In case of renewal issues, Let’s Encrypt will email you at the addresses you provided in your ACME accounts.</p>
+<p>If you encounter any issues, feel free to check the <a href="#probl%c3%a8mes-et-r%c3%a9solutions">Troubleshooting</a> section. Otherwise, there&rsquo;s only one thing left to do&hellip; Party tiiiime!!</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="img/pastis.webp" alt="Pastis" />
+      <img class="my-0 rounded-md" loading="lazy" src="/img/posts/proxmox-dns-challenge/celebrate.webp" alt="Celebrate" />
       
     </figure>
 </p>
 
 
-<h2 class="relative group">❌ Problèmes et résolutions 
-    <div id="-probl%C3%A8mes-et-r%C3%A9solutions" class="anchor"></div>
+<h2 class="relative group">❌ Troubleshooting 
+    <div id="-troubleshooting" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-probl%C3%A8mes-et-r%C3%A9solutions" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-troubleshooting" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
 
 
-<h3 class="relative group">💡 Infomaniak API token 
+<h3 class="relative group">💡 Infomaniak API Token 
     <div id="-infomaniak-api-token" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-infomaniak-api-token" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-infomaniak-api-token" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>Vous avez suivi la documentation du <a href="https://go-acme.github.io/lego/dns/infomaniak/index.html" target="_blank">site de go-acme.github.io</a> pour votre domaine chez Infomaniak mais vous obtenez ce message d&rsquo;erreur :</p>
+<p>You followed the documentation on the <a href="https://go-acme.github.io/lego/dns/infomaniak/index.html" target="_blank">go-acme.github.io website</a> for your domain at Infomaniak but received the following error message:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Please provide a valid Infomaniak API token in variable INFOMANIAK_API_TOKEN
 </span></span></code></pre></div><p>
     <figure>
@@ -1371,67 +1339,67 @@ En cas de problème de renouvellement, vous revevrez un mail de Let&rsquo;s Encr
       
     </figure>
 </p>
-<p>Et la configuration de votre <code>ACME DNS Plugin</code> resemble à cela :</p>
+<p>And the configuration of your <code>ACME DNS Plugin</code> looks like this:</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="img/acme_dns_plugin_wrong_config.jpg" alt="ACME Infomaniak wroonf config" />
+      <img class="my-0 rounded-md" loading="lazy" src="img/acme_dns_plugin_wrong_config.jpg" alt="ACME Infomaniak wrong config" />
       
     </figure>
 </p>
-<p>Alors la réponse est dans le message d&rsquo;erreur. En fait le message nous indique clairement qu&rsquo;il attend une variable avec la valeur <code>INFOMANIAK_API_TOKEN</code>. Pour une raison que j&rsquo;ignore, sur Proxmox ce paramètre doit être nommé <code>INFOMANIAK_API_TOKEN</code> au lieu de <code>INFOMANIAK_ACESS_TOKEN</code>.</p>
-<p>Au final, rien de bien méchant. Retournez sur la configuration de votre <code>ACME DNS Plugin</code> puis changez le nom de la valeur <code>INFOMANIAK_ACESS_TOKEN</code> en <code>INFOMANIAK_API_TOKEN</code> :</p>
+<p>The answer is in the error message. It indicates that it expects a variable with the value <code>INFOMANIAK_API_TOKEN</code>. For some reason, on Proxmox, this parameter needs to be named <code>INFOMANIAK_API_TOKEN</code> instead of <code>INFOMANIAK_ACCESS_TOKEN</code>.</p>
+<p>In the end, it’s a simple fix. Go back to your <code>ACME DNS Plugin</code> configuration and change the parameter name from <code>INFOMANIAK_ACCESS_TOKEN</code> to <code>INFOMANIAK_API_TOKEN</code>:</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="img/acme_dns_plugin_good_config.jpg" alt="ACME Infomaniak good config" />
+      <img class="my-0 rounded-md" loading="lazy" src="img/acme_dns_plugin_good_config.jpg" alt="ACME Infomaniak correct config" />
       
     </figure>
 </p>
 
 
-<h3 class="relative group">💡 Mauvais certificat 
-    <div id="-mauvais-certificat" class="anchor"></div>
+<h3 class="relative group">💡 Incorrect Certificate 
+    <div id="-incorrect-certificate" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-mauvais-certificat" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-incorrect-certificate" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>Il se peut que lors de la <a href="#-certificat-de-production">génération du certificat de production</a>, votre navigateur continu à vous afficher une alerte concernant votre certificat malgré que ce soit bien celui de Let&rsquo;s Encrypt sur le directory <code>Let's Encrypt V2</code> :</p>
+<p>It may happen that during the <a href="#-production-certificate">production certificate generation</a>, your browser continues to display a warning regarding your certificate, even though it is indeed the Let&rsquo;s Encrypt certificate from the <code>Let's Encrypt V2</code> directory:</p>
 <p>
     <figure>
-      <img class="my-0 rounded-md" loading="lazy" src="img/alert_good_certificate.jpg" alt="Proxmox alter good certificate" />
+      <img class="my-0 rounded-md" loading="lazy" src="img/alert_good_certificate.jpg" alt="Proxmox alert good certificate" />
       
     </figure>
 </p>
-<p>Bon dans un premier temps, vérifiez que votre certificat de production a bien été pris en compte.</p>
-<p>Si c&rsquo;est le cas, il y a de grandes chances pour que ce soit le cache de votre navigateur qui vous pose problème. Je vous invite à relancer votre navigateur et si cela ne suffit pas, vous pouvez effacer le cache de celui-ci et le relancer à nouveau.</p>
-<p>Cela devrait résoudre votre problème 😉 !</p>
+<p>First, check that your production certificate has indeed been applied.</p>
+<p>If it has, there’s a high chance that your browser’s cache is causing the issue. Try restarting your browser, and if that doesn’t work, clear its cache and restart it again.</p>
+<p>This should resolve the issue 😉!</p>
 
 
-<h3 class="relative group">💡 Validation ACME 
-    <div id="-validation-acme" class="anchor"></div>
+<h3 class="relative group">💡 ACME Validation 
+    <div id="-acme-validation" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#-validation-acme" aria-label="Ancre">#</a>
+            style="text-decoration-line: none !important;" href="#-acme-validation" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>Je n&rsquo;ai pas encore eu  le cas avec Proxmox mais je pense que cela peut arriver.</p>
-<p>La configuration de votre <code>ACME DNS Plugin</code> est correcte puisque vous n&rsquo;avez pas d&rsquo;erreur particulière lors de la commande de votre certificat mais pourtant, la validation ACME échoue car elle a dépassé le temps imparti pour la validation (Timeout).</p>
-<p>Quelques pistes pour vous aider :</p>
+<p>I haven&rsquo;t encountered this with Proxmox yet, but it can happen.</p>
+<p>Your <code>ACME DNS Plugin</code> configuration is correct since there are no specific errors during the certificate request, yet the ACME validation fails due to a timeout.</p>
+<p>Here are a few troubleshooting tips:</p>
 <ul>
-<li>Venir jouer avec les valeurs des paramètres <code>Validation Delay</code> et / ou <code>INFOMANIAK_PROPAGATION_TIMEOUT</code> de votre <code>ACME DNS Plugin</code> :
+<li>Adjust the <code>Validation Delay</code> and/or <code>INFOMANIAK_PROPAGATION_TIMEOUT</code> parameters in your <code>ACME DNS Plugin</code>:
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/acme_dns_plugin_60.jpg" alt="ACME DNS Plugin 60" />
       
     </figure>
 </li>
-<li>Changez provisoirement les DNS de votre hôte :
+<li>Temporarily change your host’s DNS settings:
 
     <figure>
       <img class="my-0 rounded-md" loading="lazy" src="img/proxmox_dns_config.jpg" alt="Proxmox temp. DNS config." />
@@ -1465,14 +1433,14 @@ En cas de problème de renouvellement, vous revevrez un mail de Let&rsquo;s Encr
   <div class="place-self-center">
     
     <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
-      Auteur
+      Author
     </div>
     <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
       Louis GATTABRUSI
     </div>
     
     
-    <div class="text-sm text-neutral-700 dark:text-neutral-400">TBD</div>
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">&hellip;</div>
     
     <div class="text-2xl sm:text-lg">
   <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
@@ -1568,7 +1536,7 @@ En cas de problème de renouvellement, vous revevrez un mail de Let&rsquo;s Encr
       <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
   <a href="#the-top"
     class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="Faire défiler jusqu&#39;au bas de la page" title="Faire défiler jusqu&#39;au bas de la page">
+    aria-label="Scroll to top" title="Scroll to top">
     &uarr;
   </a>
 </div>
@@ -1591,7 +1559,7 @@ En cas de problème de renouvellement, vous revevrez un mail de Let&rsquo;s Encr
     <p class="text-xs text-neutral-500 dark:text-neutral-400">
       
       
-      Propulsé par <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
         href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
         href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
     </p>
@@ -1639,14 +1607,14 @@ En cas de problème de renouvellement, vous revevrez un mail de Let&rsquo;s Encr
           type="search"
           id="search-query"
           class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
-          placeholder="Rechercher"
+          placeholder="Search"
           tabindex="0"
         />
       </form>
       <button
         id="close-search-button"
         class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
-        title="Fermer (Esc)"
+        title="Close (Esc)"
       >
         
 

@@ -1,7 +1,7 @@
 disabled = false
 languageCode = "en"
 languageName = "English"
-weight = 2
+weight = 1
 title = "louigi.tech"
 contentDir = 'content/en/'
 
@@ -12,7 +12,7 @@ contentDir = 'content/en/'
   dateFormat = "2 January 2006"
   logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
+  # description = "Welcome to my blog where "
   copyright = "&copy; Copyright - Louis GATTABRUSI"
 
 [params.author]
@@ -21,7 +21,7 @@ contentDir = 'content/en/'
   image = "img/avatar.jpg"
   imageQuality = 96
   headline = "🛰️ Just a blog of a systems & networks administrator."
-  bio = "TBD"
+  bio = "..."
   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },

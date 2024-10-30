@@ -1,7 +1,7 @@
 disabled = false
 languageCode = "fr"
 languageName = "French"
-weight = 1
+weight = 2
 title = "louigi.tech"
 contentDir = 'content/fr/'
 
@@ -21,7 +21,7 @@ contentDir = 'content/fr/'
   image = "img/avatar.jpg"
   imageQuality = 96
   headline = "🛰️ Le blog d'un admin. sys. et réseaux"
-  bio = "TBD"
+  bio = "..."
   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },

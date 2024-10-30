@@ -1,9 +1,9 @@
 +++
 title = "Proxmox: Let's Encrypt Certificate with DNS Challenge"
-date = 2024-10-23T14:09:43+02:00
-description = "Oui"
+date = 2024-10-30T15:00:00+02:00
+description = "Proxmox let's encrypt certificate with DNS challenge Infomaniak"
 tags = ['System']
-draft = true
+draft = false
 +++
 
 
@@ -134,9 +134,9 @@ The DNS challenge configuration is complete, and we can now generate our certifi
 
 ### 📜 Certificates creation
 
-If you’re familiar with the DNS challenge, you can skip to the [production certificate generation](#-certificat-de-production).
+If you’re familiar with the DNS challenge, you can skip to the [production certificate generation](#-production-certificate).
 
-Otherwise, I suggest testing with the **staging** account to avoid hitting the [the rate limits mentioned above](#-comptes-acme).\
+Otherwise, I suggest testing with the **staging** account to avoid hitting the [the rate limits mentioned above](#-acme-accounts).\
 Once the staging configuration is validated, we’ll switch to the **production** account.
 
 #### 🧪 Staging certificate
