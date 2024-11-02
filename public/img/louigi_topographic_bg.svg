@@ -628,10 +628,10 @@
             c9.7,4.8,19.8,9.6,28.6,15.8c17.9,12.4,35.4,28.9,29.5,57c-2.9,14-16,27.7-27.7,39.6c-3,3.1-5.8,6.1-8.4,9
             c-16.5,18-26.8,30.2-33,50.4c-4.6,15.1-5,42.1-0.8,61.5c3.4,15.6,7.5,30.7,11.7,45.1h0.8c-4.2-14.5-8.3-29.6-11.7-45.3
             C430.6,1598.6,430.9,1571.8,435.5,1556.8z"/>
-          <animateTransform attributeName="transform" attributeType="XML"
+          <!-- <animateTransform attributeName="transform" attributeType="XML"
                             type="scale" values="1;1.05;0.9;1" dur="150s" repeatCount="indefinite"
                             additive="sum" fill="freeze"></animateTransform>
-          <!-- <animateTransform attributeName="transform" attributeType="XML" 
+          <animateTransform attributeName="transform" attributeType="XML" 
           type="translate" values="120 -400;150 -350;120 -400" repeatCount="indefinite" dur="150s"></animateTransform>
           <animateTransform attributeType="xml" attributeName="transform" type="rotate" values="15;20;15" dur="300s" additive="sum" repeatCount="indefinite" />
           <animateTransform attributeName="transform" attributeType="XML"
