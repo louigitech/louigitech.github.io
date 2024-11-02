@@ -631,10 +631,10 @@
           <animateTransform attributeName="transform" attributeType="XML"
                             type="scale" values="1;1.05;0.9;1" dur="150s" repeatCount="indefinite"
                             additive="sum" fill="freeze"></animateTransform>
-          <animateTransform attributeName="transform" attributeType="XML" 
+          <!-- <animateTransform attributeName="transform" attributeType="XML" 
           type="translate" values="120 -400;150 -350;120 -400" repeatCount="indefinite" dur="150s"></animateTransform>
           <animateTransform attributeType="xml" attributeName="transform" type="rotate" values="15;20;15" dur="300s" additive="sum" repeatCount="indefinite" />
-          <!-- <animateTransform attributeName="transform" attributeType="XML"
+          <animateTransform attributeName="transform" attributeType="XML"
                             type="rotate" values="-30;-5;-30" dur="300s" repeatCount="indefinite"
                             additive="sum" fill="freeze"/> BIG IMPACT ON PERF --> 
         </g>
