@@ -68,7 +68,7 @@ body > div.fixed.inset-x-0.pl-\[24px\].pr-\[24px\].bg-neutral.dark\:bg-neutral-8
 .border-2 {
   border-width: 0px;
   border-color: #A645FF;
-  background-color: rgba(60, 60, 60, 0.5);
+  background-color: transparent;
   --tw-backdrop-blur: blur(5px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);

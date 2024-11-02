@@ -8,20 +8,12 @@
       <![CDATA[
         .path {
           fill: #2D3032;
-          stroke-width: 2;
+          stroke-width: 1;
           stroke-linecap: round;
           stroke-miterlimit: 500;
           stroke: url(#gradient);
           stroke-dasharray: 600;
           stroke-dashoffset: 800;
-          animation: dash 60s linear alternate infinite;
-        }
-        @keyframes dash {
-          to {
-            stroke-dashoffset: 500;
-            fill: #ffffff;
-            filter: brightness(2);
-          }
         }
       ]]>
     </style>
