@@ -9,7 +9,7 @@ draft = false
 
 ## 📢 Introduction
 
-Que ce soit dans votre homelab ou dans un environnement de production, vous êtes forcément tomber sur ce message à la première connexion de votre hôte Proxmox :
+Que ce soit dans votre homelab ou dans un environnement de production, vous êtes forcément tombé sur ce message à la première connexion de votre hôte Proxmox :
 
 ![Self signed alert](img/self_signed_alert.jpg)
 
@@ -17,7 +17,7 @@ Par défaut, l'interface web de Proxmox est livrée avec un certificat auto-sign
 
 Dans cet article, je vais vous expliquer de manière détaillée, toutes les étapes nécessaires à la mise en place d'un certificat Let's Encrypt avec un challenge DNS.
 
-Il faut savoir que la procédure a été réalisation avec un token d'API Infomaniak puisque mon domaine est chez eux. Toutefois, la procédure devrait fonctionner pour les autres fournisseurs, il vous suffira d'adapter les paramètres en fonction. 
+Il faut savoir que la procédure a été réalisée avec un token d'API Infomaniak puisque mon domaine est chez eux. Toutefois, la procédure devrait fonctionner pour les autres fournisseurs, il vous suffira d'adapter les paramètres en fonction. 
 
 ### 🔍 Prérequis
 
@@ -36,8 +36,6 @@ Il faut savoir que la procédure a été réalisation avec un token d'API Infoma
 - Nom de domaine public **obligatoire**
 - Votre registrar doit être compatible avec le challenge DNS ([la liste ici](https://go-acme.github.io/lego/dns/))
 - Complexité de mise en place (et encore, une fois que vous avez compris c'est assez simple)
-
-
 
 ## ⚙️ Mise en place
 
