@@ -44,7 +44,7 @@ Note that this procedure was carried out using an Infomaniak API token, as my do
 We'll start by setting up not one but two ACME accounts on our host, here’s why:
 - A `staging` account in the `Let's Encrypt V2 Staging` directory, which will be used to validate that our ACME configuration is correct. This allows for debugging and error correction without hitting the rate limit described below, which could otherwise result in account blocking.
 
--The other is a `produduction` account in the `Let's Encrypt V2` directory. Once configuration is validated, we’ll switch to this account to obtain our final certificate.
+- The other is a `produduction` account in the `Let's Encrypt V2` directory. Once configuration is validated, we’ll switch to this account to obtain our final certificate.
 
 {{< alert >}}
 The limit is 5 failures per account, per hostname, per hour in the `Let's Encrypt V2` directory.
