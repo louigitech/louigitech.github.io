@@ -8,13 +8,14 @@
     <language>fr</language>
     <copyright>&amp;copy; Copyright - Louis GATTABRUSI</copyright>
     <lastBuildDate>Wed, 30 Oct 2024 15:00:00 +0200</lastBuildDate><atom:link href="http://localhost:1313/fr/index.xml" rel="self" type="application/rss+xml" />
+    
     <item>
       <title>Proxmox : Certificat Let&#39;s Encrypt avec challenge DNS</title>
       <link>http://localhost:1313/fr/posts/proxmox-dns-challenge/</link>
       <pubDate>Wed, 30 Oct 2024 15:00:00 +0200</pubDate>
       
       <guid>http://localhost:1313/fr/posts/proxmox-dns-challenge/</guid>
-      <description>📢 Introduction #Que ce soit dans votre homelab ou dans un environnement de production, vous êtes forcément tombé sur ce message à la première connexion de votre hôte Proxmox :</description>
+      <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/fr/posts/proxmox-dns-challenge/featured.jpg" />
     </item>
     
